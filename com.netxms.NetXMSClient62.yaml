@@ -11,6 +11,8 @@ finish-args:
   - --share=network
   - --persist=.nxmc4
   - --persist=.swt
+  # Allow local command / SSH object tools to run on the host via flatpak-spawn
+  - --talk-name=org.freedesktop.Flatpak
 modules:
   - name: openjdk-17
     buildsystem: simple
